@@ -18,21 +18,38 @@ let sept = document.querySelectorAll("button")
 // let zero = document.querySelector("#zero")
 let egal = document.querySelector("#egal")
 
-console.log(sept);
+// let touch = [sept[1],sept[5],sept[9],sept[13]]
+
+// touch = true
+
 
 for (let index = 0; index < sept.length; index++) {
     sept[index].addEventListener("click", ()=>{
-        ecran.value = ecran.value + sept[index].innerText
+        if (ecran.value == "" && ["+", "*", "/",".","-"].includes(sept[index].value)) {
+            return 
+        } else {
+            ecran.value = ecran.value + sept[index].innerText
+            // if (ecran.value == sept[index].innerText && ["+", "*", "/" ,".","-"].includes(sept[index])) {
+            //     alert("wayaw")
+            // } else {    
+
+            // }
+        }
     })
 }
  
+
 let reponse
 let infin
-egal.addEventListener("click", () => {
-    reponse = ecran.value.toString()
-    console.log(reponse);
-    infin = eval(reponse)
-    console.log(infin);
-    ecran.value = infin
-    
-})
+
+
+        egal.addEventListener("click", () => {
+            reponse = ecran.value.toString()
+            infin = eval(reponse)
+            ecran.value = infin
+            
+        })
+
+        reset.addEventListener("click", () => {
+            ecran.value = ""
+        })

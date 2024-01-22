@@ -4,20 +4,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-}
+    background: rgb(180,58,58);
+    background: linear-gradient(34deg, rgba(180,58,58,1) 0%, rgba(48,48,48,1) 37%);}
 
 
 .container {
     height: 450px;
     width: 400px;
-    background: rgb(58,60,180);
-    background: linear-gradient(34deg, rgba(58,60,180,1) 0%, rgba(253,130,29,1) 50%, rgba(252,69,168,1) 100%);
+    background: rgb(180,58,58);
+background: linear-gradient(180deg, rgba(180,58,58,1) 0%, rgba(255,255,255,1) 51%);
     border-radius: 10%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 3px solid black;
+    border: 3px solid rgb(63, 63, 63);
 }
 
 .ecran {
@@ -30,14 +31,11 @@ body {
 .ecran input{
     height: 50px;
     width: 300px;
-    background: rgb(58,60,180);
-    background: linear-gradient(34deg, rgba(58,60,180,1) 0%, rgba(88,88,88,1) 50%, rgba(82,0,44,1) 100%);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid rgb(255, 255, 255);
-    color: white;
+    border: 2px solid rgb(209, 209, 209); 
     text-align: end;
     padding-right: 20px;
 }
@@ -54,7 +52,6 @@ body {
 #ac {
     width: 70%;
     height: 100%;
-    background-color: aqua;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -64,7 +61,6 @@ body {
 #diviser {
     width: 30%;
     height: 100%;
-    background-color: blue;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -84,13 +80,11 @@ body {
 button{
     width: 30%;
     height: 100%;
-    background: rgb(58,60,180);
-    background: linear-gradient(34deg, rgba(58,60,180,1) 0%, rgba(88,88,88,1) 50%, rgba(82,0,44,1) 100%);
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 2px solid white; 
+    border: 2px solid rgb(209, 209, 209); 
 }
 /* .seven, .huit, .neuf, .quatre, .cinq, .six, .un, .deux, .trois, .plus, .sous, .foix, bouton{
     width: 30%;
@@ -117,7 +111,6 @@ button{
 #zero {
     width: 70%;
     height: 100%;
-    background-color: aqua;
     border-radius: 30px;
     display: flex;
     justify-content: center;
@@ -127,9 +120,18 @@ button{
 #egal {
     width: 30%;
     height: 100%;
-    background-color: blue;
     border-radius: 30px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#egal {
+    background-image: url(./../img/egal.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    background-position: center;
 }
